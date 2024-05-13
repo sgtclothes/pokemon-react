@@ -29,6 +29,7 @@ export default function NavigationBar() {
             dispatch({ type: "SET_AUTH", payload: { ...auth, isLogin: true, loginData: loginData, token: loginData.token } });
         } catch (error) {
             console.log(error.message);
+            alert("Failed to Login")
         }
     }
 
