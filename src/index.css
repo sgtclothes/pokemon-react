@@ -1,430 +1,533 @@
 .pk-navigation-bar {
-    background-color: #eb4f34 !important;
-    color: white !important;
-    transition: background-color 0.5s ease;
+  background-color: #eb4f34 !important;
+  color: white !important;
+  transition: 0.5s;
+  margin-left: 0;
+}
+
+.pk-navigation-bar.shifted {
+  margin-left: 250px;
 }
 
 .pk-ball-logo {
-    width: 40px;
-    margin-right: 10px;
+  width: 40px;
+  margin-right: 10px;
 }
 
 .pk-logo {
-    width: 100px;
+  width: 100px;
 }
 
 .pk-lines {
-    width: 100%;
-    height: 10px;
-    background-color: yellow;
+  width: 100%;
+  height: 10px;
+  background-color: yellow;
 }
 
 .navbar-brand,
 .navbar-toggler,
 .navbar-nav .nav-item .nav-link {
-    color: white;
+  color: white;
 }
 
 .navbar-toggler {
-    background-color: white;
+  background-color: white;
 }
 
 .nav-link {
-    padding: 5px;
-    margin: 5px;
-    border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
 }
 
 .nav-link:hover {
-    background-color: red;
+  background-color: red;
 }
 
 .pk-filter {
-    padding: 10px;
-    background-color: #eb4f34;
-    width: 100%;
-    height: 60px;
+  padding: 10px;
+  background-color: #eb4f34;
+  width: 100%;
+  height: 60px;
 }
 
 .pk-filter form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .pk-filter input {
-    width: 200px;
-    border-radius: 10px !important;
+  width: 200px;
+  border-radius: 10px !important;
 }
 
 .pk-list {
-    padding: 20px;
+  padding: 20px;
 }
 
 .pk-list .card-title {
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 10px;
 }
 
 .pk-list .card-title:hover {
-    color: yellow;
+  color: yellow;
 }
 
 .pk-list .card {
-    text-align: center;
+  text-align: center;
 }
 
 .pk-list .card-body {
-    background-color: #eb4f34;
-    color: white;
+  background-color: #eb4f34;
+  color: white;
 }
 
 .pk-frame {
-    border: 5px solid yellow;
+  border: 5px solid yellow;
 }
 
 .pk-list img {
-    width: 300px;
-    margin-left: auto;
-    margin-right: auto;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media only screen and (max-width: 1260px) {
-    .pk-list img {
-        width: 200px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+  .pk-list img {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media only screen and (max-width: 876px) {
-    .pk-list img {
-        width: 100px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+  .pk-list img {
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .pk-navigation-bar.shifted {
+    margin-left: 0px;
+  }
+
+  .sidebar.open {
+    transform: translateX(-250px) !important;
+  }
+
+  .content-admin.shifted {
+    margin-left: 0px !important;
+  }
 }
 
 .pk-pagination {
-    width: 100%;
-    height: 80px;
-    margin-bottom: 20px;
-    text-align: center;
+  width: 100%;
+  height: 80px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .pk-pagination button {
-    color: white;
-    padding: 10px;
-    background-color: #eb4f34;
-    border: 1px solid #ddd;
-    text-decoration: none;
-    border-radius: 5px;
+  color: white;
+  padding: 10px;
+  background-color: #eb4f34;
+  border: 1px solid #ddd;
+  text-decoration: none;
+  border-radius: 5px;
 }
 
 .pk-pagination button.active {
-    background-color: white;
-    color: #eb4f34;
-    border: 1px solid #eb4f34;
+  background-color: white;
+  color: #eb4f34;
+  border: 1px solid #eb4f34;
 }
 
 .pk-pagination button:hover:not(.active) {
-    background-color: red;
+  background-color: red;
 }
 
 .pk-disabled-button {
-    background-color: lightcoral !important;
+  background-color: lightcoral !important;
 }
 
 .pk-menu-profile .dropdown-menu {
-    right: 0;
-    left: auto;
+  right: 0;
+  left: auto;
 }
 
 .pk-button-search {
-    border-radius: 10px;
-    border: 1px solid white;
-    background-color: #eb4f34;
-    color: white;
+  border-radius: 10px;
+  border: 1px solid white;
+  background-color: #eb4f34;
+  color: white;
 }
 
 .pk-button-search:hover {
-    background-color: red;
+  background-color: red;
 }
 
 .pk-not-found {
-    width: 100%;
-    text-align: center;
-    margin: 10px;
+  width: 100%;
+  text-align: center;
+  margin: 10px;
 }
 
 .pk-not-found img {
-    width: 300px;
+  width: 300px;
 }
 
 .pk-loading {
-    width: 100%;
-    text-align: center;
-    color: #eb4f34;
-    font-size: 50px;
-    margin: auto;
+  width: 100%;
+  text-align: center;
+  color: #eb4f34;
+  font-size: 50px;
+  margin: auto;
 }
 
 .pk-detail-header {
-    width: 100%;
-    height: 80px;
-    background: linear-gradient(to right, #eb4f34 80%, white 100%);
+  width: 100%;
+  height: 80px;
+  background: linear-gradient(to right, #eb4f34 80%, white 100%);
 }
 
 .pk-detail-header .pk-info {
-    font-size: 30px;
-    color: white;
-    padding: 20px;
+  font-size: 30px;
+  color: white;
+  padding: 20px;
 }
 
 .pk-img-container {
-    text-align: center;
+  text-align: center;
 }
 
 .pk-img-container img {
-    width: 400px;
+  width: 400px;
 }
 
 .pk-detail-container {
-    border-bottom: 1px solid #929da3;
+  border-bottom: 1px solid #929da3;
 }
 
 .pk-table-container {
-    margin: auto;
-    padding-right: 40px;
+  margin: auto;
+  padding-right: 40px;
 }
 
 @media only screen and (max-width: 1025px) {
-    .pk-img-container img {
-        width: 200px;
-    }
-    .pk-table-container {
-        padding-right: 0;
-    }
+  .pk-img-container img {
+    width: 200px;
+  }
+  .pk-table-container {
+    padding-right: 0;
+  }
 }
 
 .bg-type-normal {
-    background-color: #929da3;
-    color: white;
+  background-color: #929da3;
+  color: white;
 }
 
 .bg-type-fighting {
-    background-color: #ce416b;
-    color: white;
+  background-color: #ce416b;
+  color: white;
 }
 
 .bg-type-fire {
-    background-color: #ff9d54;
-    color: white;
+  background-color: #ff9d54;
+  color: white;
 }
 
 .bg-type-flying {
-    background-color: #8fa8de;
-    color: white;
+  background-color: #8fa8de;
+  color: white;
 }
 
 .bg-type-grass {
-    background-color: green;
-    color: white;
+  background-color: green;
+  color: white;
 }
 
 .bg-type-poison {
-    background-color: purple;
-    color: white;
+  background-color: purple;
+  color: white;
 }
 
 .bg-type-ground {
-    background-color: #d97845;
-    color: white;
+  background-color: #d97845;
+  color: white;
 }
 
 .bg-type-rock {
-    background-color: #c4b78b;
-    color: white;
+  background-color: #c4b78b;
+  color: white;
 }
 
 .bg-type-bug {
-    background-color: #91c12f;
-    color: white;
+  background-color: #91c12f;
+  color: white;
 }
 
 .bg-type-ghost {
-    background-color: #5269ad;
-    color: white;
+  background-color: #5269ad;
+  color: white;
 }
 
 .bg-type-steel {
-    background-color: #5a8ea3;
-    color: white;
+  background-color: #5a8ea3;
+  color: white;
 }
 
 .bg-type-water {
-    background-color: #5090d6;
-    color: white;
+  background-color: #5090d6;
+  color: white;
 }
 
 .bg-type-electric {
-    background-color: #f4d23b;
-    color: white;
+  background-color: #f4d23b;
+  color: white;
 }
 
 .bg-type-ice {
-    background-color: #73cebf;
-    color: white;
+  background-color: #73cebf;
+  color: white;
 }
 
 .bg-type-dragon {
-    background-color: #0b6dc4;
-    color: white;
+  background-color: #0b6dc4;
+  color: white;
 }
 
 .bg-type-dark {
-    background-color: #5b5464;
-    color: white;
+  background-color: #5b5464;
+  color: white;
 }
 
 .bg-type-fairy {
-    background-color: #ec8fe7;
-    color: white;
+  background-color: #ec8fe7;
+  color: white;
 }
 
 .bg-type-physical {
-    background-color: #e9551b;
-    color: white;
+  background-color: #e9551b;
+  color: white;
 }
 
 .bg-type-special {
-    background-color: #1f4e94;
-    color: white;
+  background-color: #1f4e94;
+  color: white;
 }
 
 .bg-type-status {
-    background-color: #999999;
-    color: white;
+  background-color: #999999;
+  color: white;
 }
 
 .bg-type-unknown {
-    background-color: #67a08f;
-    color: white;
+  background-color: #67a08f;
+  color: white;
 }
 
 .bg-type-psychic {
-    background-color: plum;
-    color: white;
+  background-color: plum;
+  color: white;
 }
 
 .bg-type-stellar {
-    background-color: slateblue;
-    color: white;
+  background-color: slateblue;
+  color: white;
 }
 
 .pk-title-row {
-    color: darkred !important;
+  color: darkred !important;
 }
 
 .pk-detail-sound {
-    display: flex;
-    width: 100%;
+  display: flex;
+  width: 100%;
 }
 
 .pk-table-moves table {
-    width: 400px;
-    margin-left: auto;
-    margin-right: auto;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .pk-no-table-moves {
-    width: 80px;
+  width: 80px;
 }
 
 .pk-detail-move-page {
-    margin: 20px;
-    font-size: 20px;
+  margin: 20px;
+  font-size: 20px;
 }
 
 .pk-detail-stats table {
-    width: 500px;
+  width: 500px;
 }
 
 .pk-no-found {
-    width: 100%;
-    text-align: center;
-    color: #eb4f34;
-    font-size: 50px;
-    margin: auto;
+  width: 100%;
+  text-align: center;
+  color: #eb4f34;
+  font-size: 50px;
+  margin: auto;
 }
 
 .pk-mypokemon-list {
-    margin: 50px;
+  margin: 50px;
 }
 
 .pk-mypokemon-list .title {
-    background-color: #eb4f34;
-    color: white;
+  background-color: #eb4f34;
+  color: white;
 }
 
 .pk-mypokemon-list img {
-    width: 300px;
+  width: 300px;
 }
 
 .pk-mypokemon-list button {
-    color: white;
-    padding: 10px;
-    background-color: #eb4f34;
-    border: 1px solid #ddd;
-    text-decoration: none;
-    border-radius: 5px;
-    margin: 10px;
+  color: white;
+  padding: 10px;
+  background-color: #eb4f34;
+  border: 1px solid #ddd;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 10px;
 }
 
 .pk-button {
-    color: white;
-    padding: 10px;
-    background-color: #eb4f34;
-    border: 1px solid #ddd;
-    text-decoration: none;
-    border-radius: 5px;
+  color: white;
+  padding: 10px;
+  background-color: #eb4f34;
+  border: 1px solid #ddd;
+  text-decoration: none;
+  border-radius: 5px;
 }
 
 .catching-pokemon img {
-    width: 300px;
-    height: 300px;
+  width: 300px;
+  height: 300px;
 }
 
 .pk-catch-pokemon input {
-    height: 40px;
-    margin: 10px;
+  height: 40px;
+  margin: 10px;
 }
 
 .pk-label-catch-pokemon {
-    font-weight: bold;
-    color: #eb4f34;
+  font-weight: bold;
+  color: #eb4f34;
 }
 
 .pk-release-pokemon {
-    text-align: center;
-    margin: 50px;
+  text-align: center;
+  margin: 50px;
 }
 
 .pk-release-pokemon img {
-    width: 500px;
-    height: 300px;
+  width: 500px;
+  height: 300px;
 }
 
 .pk-menu-profile button {
-    color: white;
-    padding: 10px;
-    background-color: #eb4f34;
-    border: 1px solid #ddd;
-    text-decoration: none;
-    border-radius: 5px;
+  color: white;
+  padding: 10px;
+  background-color: #eb4f34;
+  border: 1px solid #ddd;
+  text-decoration: none;
+  border-radius: 5px;
 }
 
 .pk-menu-profile input {
-    margin: 10px;
+  margin: 10px;
+}
+
+/* Sidebar.css */
+.sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #eb4f34;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px; /* Sesuaikan dengan tinggi top navigation bar */
+  transform: translateX(-250px); /* Mulai dalam posisi tersembunyi */
+  border: 1px solid white;
+}
+
+.sidebar.open {
+  transform: translateX(0); /* Tampilkan sidebar */
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 8px 8px 8px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.sidebar ul li:hover {
+  color: #eb4f34;
+  background-color: white;
+}
+
+/* App.css */
+.App {
+  font-family: Arial, sans-serif;
+}
+
+.top-nav {
+  height: 60px;
+  background-color: #333;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transition: left 0.5s;
+}
+
+.top-nav.shifted {
+  left: 250px;
+}
+
+.top-nav button {
+  font-size: 30px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: white;
+  margin-right: 16px;
+}
+
+.content-admin {
+  transition: margin-left 0.5s;
+  padding: 16px;
+}
+
+.content-admin.shifted {
+  margin-left: 250px;
+}
+
+.pk-sidebar-btn {
+    color: white;
+    background-color: #eb4f34;
+    margin-right: 5px;
 }
