@@ -1,8 +1,8 @@
 {
     "rewrites": [
         {
-            "source": "/api/(.*)",
-            "destination": "http://103.186.1.188:3007/$1"
+            "source": "/api-cactus/:path*",
+            "destination": "http://103.186.1.188:3007/:path*"
         }
     ]
 }

@@ -3,7 +3,7 @@ import Carousel from "./Carousel";
 import PokemonList from "./PokemonList";
 
 (async () => {
-    let response = await fetch("/api/category/cactus?page=1");
+    let response = await fetch("/api-cactus/category/cactus?page=1");
     let json = await response.json();
     console.log(json);
 })();
